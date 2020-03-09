@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="175dp"
+    android:layout_height="200dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="#EEE4E4"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/itemNum"
+        android:layout_width="33dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textColor="#16121111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="115dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toRightOf="@+id/itemNum"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="74dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+    <TextView
+        android:id="@+id/itemModel"
+        android:layout_width="73dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
